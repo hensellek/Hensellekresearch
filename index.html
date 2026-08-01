@@ -1,0 +1,496 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww18140\viewh15920\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8" />\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
+  <title>Betty Hensellek, PhD | Art & Design Historian</title>\
+  <link rel="preconnect" href="https://fonts.googleapis.com">\
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">\
+  \
+  <style>\
+    /* ==========================================================================\
+       DESIGN SYSTEM & CSS VARIABLES\
+       ========================================================================== */\
+    :root \{\
+      --bg-color: #FAF8F5;\
+      --surface-color: #FFFFFF;\
+      --text-main: #1A1A1A;\
+      --text-muted: #666666;\
+      --accent-rust: #9E4A38;\
+      --accent-blue: #2B4162;\
+      --border-color: #E2DDD5;\
+      --border-dark: #1A1A1A;\
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;\
+      --max-width: 1280px;\
+    \}\
+\
+    * \{\
+      box-sizing: border-box;\
+      margin: 0;\
+      padding: 0;\
+    \}\
+\
+    body \{\
+      background-color: var(--bg-color);\
+      color: var(--text-main);\
+      font-family: var(--font-main);\
+      line-height: 1.6;\
+      -webkit-font-smoothing: antialiased;\
+    \}\
+\
+    a \{\
+      color: inherit;\
+      text-decoration: none;\
+    \}\
+\
+    /* ==========================================================================\
+       HEADER & NAVIGATION (LUMEN MUSEUM STYLE)\
+       ========================================================================== */\
+    header \{\
+      position: sticky;\
+      top: 0;\
+      background-color: var(--bg-color);\
+      border-bottom: 1px solid var(--border-color);\
+      z-index: 1000;\
+      backdrop-filter: blur(8px);\
+    \}\
+\
+    .nav-container \{\
+      max-width: var(--max-width);\
+      margin: 0 auto;\
+      padding: 1.25rem 2rem;\
+      display: flex;\
+      justify-content: space-between;\
+      align-items: center;\
+    \}\
+\
+    .brand-logo \{\
+      font-size: 1.1rem;\
+      font-weight: 700;\
+      text-transform: uppercase;\
+      letter-spacing: 0.08em;\
+    \}\
+\
+    .brand-logo span \{\
+      display: block;\
+      font-size: 0.75rem;\
+      font-weight: 400;\
+      color: var(--text-muted);\
+      letter-spacing: 0.05em;\
+    \}\
+\
+    nav ul \{\
+      display: flex;\
+      list-style: none;\
+      gap: 2rem;\
+    \}\
+\
+    nav a \{\
+      font-size: 0.85rem;\
+      font-weight: 600;\
+      text-transform: uppercase;\
+      letter-spacing: 0.1em;\
+      transition: color 0.2s ease;\
+    \}\
+\
+    nav a:hover \{\
+      color: var(--accent-rust);\
+    \}\
+\
+    /* ==========================================================================\
+       HERO SECTION\
+       ========================================================================== */\
+    .hero \{\
+      max-width: var(--max-width);\
+      margin: 0 auto;\
+      padding: 5rem 2rem 4rem;\
+      border-bottom: 1px solid var(--border-color);\
+    \}\
+\
+    .hero-eyebrow \{\
+      font-size: 0.8rem;\
+      font-weight: 600;\
+      text-transform: uppercase;\
+      letter-spacing: 0.15em;\
+      color: var(--accent-rust);\
+      margin-bottom: 1rem;\
+    \}\
+\
+    .hero-title \{\
+      font-size: clamp(2.2rem, 5vw, 3.8rem);\
+      font-weight: 700;\
+      line-height: 1.15;\
+      letter-spacing: -0.02em;\
+      max-width: 900px;\
+      margin-bottom: 1.5rem;\
+    \}\
+\
+    .hero-subtitle \{\
+      font-size: 1.2rem;\
+      color: var(--text-muted);\
+      max-width: 720px;\
+      font-weight: 300;\
+    \}\
+\
+    /* ==========================================================================\
+       SECTION HEADERS\
+       ========================================================================== */\
+    .section-container \{\
+      max-width: var(--max-width);\
+      margin: 0 auto;\
+      padding: 4rem 2rem;\
+    \}\
+\
+    .section-header \{\
+      display: flex;\
+      justify-content: space-between;\
+      align-items: flex-end;\
+      padding-bottom: 1.5rem;\
+      border-bottom: 2px solid var(--border-dark);\
+      margin-bottom: 3rem;\
+    \}\
+\
+    .section-title \{\
+      font-size: 1.5rem;\
+      font-weight: 700;\
+      text-transform: uppercase;\
+      letter-spacing: 0.08em;\
+    \}\
+\
+    .section-number \{\
+      font-size: 0.85rem;\
+      font-weight: 600;\
+      color: var(--text-muted);\
+    \}\
+\
+    /* ==========================================================================\
+       PROJECTS GRID (EDITORIAL CARDS)\
+       ========================================================================== */\
+    .projects-grid \{\
+      display: grid;\
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));\
+      gap: 2rem;\
+    \}\
+\
+    .card \{\
+      background: var(--surface-color);\
+      border: 1px solid var(--border-color);\
+      display: flex;\
+      flex-direction: column;\
+      justify-content: space-between;\
+      padding: 2rem;\
+      transition: border-color 0.2s ease, transform 0.2s ease;\
+    \}\
+\
+    .card:hover \{\
+      border-color: var(--border-dark);\
+      transform: translateY(-2px);\
+    \}\
+\
+    .card-tag \{\
+      align-self: flex-start;\
+      font-size: 0.7rem;\
+      font-weight: 700;\
+      text-transform: uppercase;\
+      letter-spacing: 0.12em;\
+      padding: 0.35rem 0.75rem;\
+      border: 1px solid var(--border-color);\
+      color: var(--accent-blue);\
+      margin-bottom: 1.5rem;\
+    \}\
+\
+    .card-title \{\
+      font-size: 1.35rem;\
+      font-weight: 600;\
+      margin-bottom: 0.75rem;\
+      line-height: 1.3;\
+    \}\
+\
+    .card-desc \{\
+      font-size: 0.95rem;\
+      color: var(--text-muted);\
+      margin-bottom: 2rem;\
+    \}\
+\
+    .card-link \{\
+      font-size: 0.8rem;\
+      font-weight: 700;\
+      text-transform: uppercase;\
+      letter-spacing: 0.1em;\
+      color: var(--accent-rust);\
+      display: inline-flex;\
+      align-items: center;\
+      gap: 0.5rem;\
+    \}\
+\
+    /* ==========================================================================\
+       ESSAYS LIST (MINIMALIST TABLE/LIST)\
+       ========================================================================== */\
+    .essays-list \{\
+      display: flex;\
+      flex-direction: column;\
+    \}\
+\
+    .essay-item \{\
+      display: grid;\
+      grid-template-columns: 1fr auto;\
+      align-items: center;\
+      padding: 1.5rem 0;\
+      border-bottom: 1px solid var(--border-color);\
+      gap: 1rem;\
+      transition: padding-left 0.2s ease;\
+    \}\
+\
+    .essay-item:hover \{\
+      padding-left: 0.5rem;\
+    \}\
+\
+    .essay-title \{\
+      font-size: 1.1rem;\
+      font-weight: 500;\
+    \}\
+\
+    .essay-desc \{\
+      font-size: 0.88rem;\
+      color: var(--text-muted);\
+      margin-top: 0.25rem;\
+    \}\
+\
+    .essay-arrow \{\
+      font-size: 1.2rem;\
+      color: var(--accent-rust);\
+    \}\
+\
+    /* ==========================================================================\
+       ABOUT & CONTACT SECTION\
+       ========================================================================== */\
+    .about-layout \{\
+      display: grid;\
+      grid-template-columns: 2fr 1fr;\
+      gap: 3rem;\
+    \}\
+\
+    .about-text p \{\
+      font-size: 1.05rem;\
+      margin-bottom: 1.5rem;\
+      color: #333;\
+    \}\
+\
+    .sidebar-box \{\
+      background: var(--surface-color);\
+      border: 1px solid var(--border-color);\
+      padding: 2rem;\
+    \}\
+\
+    .sidebar-box h4 \{\
+      font-size: 0.85rem;\
+      font-weight: 700;\
+      text-transform: uppercase;\
+      letter-spacing: 0.1em;\
+      margin-bottom: 1rem;\
+      border-bottom: 1px solid var(--border-color);\
+      padding-bottom: 0.5rem;\
+    \}\
+\
+    .sidebar-box ul \{\
+      list-style: none;\
+    \}\
+\
+    .sidebar-box li \{\
+      font-size: 0.9rem;\
+      margin-bottom: 0.75rem;\
+      color: var(--text-muted);\
+    \}\
+\
+    /* ==========================================================================\
+       FOOTER\
+       ========================================================================== */\
+    footer \{\
+      border-top: 1px solid var(--border-color);\
+      background-color: var(--surface-color);\
+      padding: 3rem 2rem;\
+      margin-top: 4rem;\
+    \}\
+\
+    .footer-container \{\
+      max-width: var(--max-width);\
+      margin: 0 auto;\
+      display: flex;\
+      justify-content: space-between;\
+      align-items: center;\
+      flex-wrap: wrap;\
+      gap: 1.5rem;\
+      font-size: 0.85rem;\
+      color: var(--text-muted);\
+    \}\
+\
+    /* ==========================================================================\
+       RESPONSIVE DESIGN\
+       ========================================================================== */\
+    @media (max-width: 768px) \{\
+      .nav-container \{\
+        flex-direction: column;\
+        align-items: flex-start;\
+        gap: 1rem;\
+      \}\
+      .about-layout \{\
+        grid-template-columns: 1fr;\
+      \}\
+      .projects-grid \{\
+        grid-template-columns: 1fr;\
+      \}\
+    \}\
+  </style>\
+</head>\
+<body>\
+\
+  <!-- NAVIGATION -->\
+  <header>\
+    <div class="nav-container">\
+      <a href="#" class="brand-logo">\
+        Betty Hensellek, PhD\
+        <span>Art & Design Historian</span>\
+      </a>\
+      <nav>\
+        <ul>\
+          <li><a href="#projects">Projects</a></li>\
+          <li><a href="#essays">Essays</a></li>\
+          <li><a href="#about">About</a></li>\
+          <li><a href="#contact">Contact</a></li>\
+        </ul>\
+      </nav>\
+    </div>\
+  </header>\
+\
+  <!-- HERO -->\
+  <section class="hero">\
+    <div class="hero-eyebrow">Central Asia, Iran & The Steppe</div>\
+    <h1 class="hero-title">Premodern design systems, ancient textiles, and the modern lives of objects.</h1>\
+    <p class="hero-subtitle">Exploring cross-cultural communication along the ancient Silk Roads through sartorial evidence, metalwork, and material culture.</p>\
+  </section>\
+\
+  <!-- PROJECTS -->\
+  <section id="projects" class="section-container">\
+    <div class="section-header">\
+      <h2 class="section-title">Major Projects</h2>\
+      <span class="section-number">01</span>\
+    </div>\
+    <div class="projects-grid">\
+      \
+      <div class="card">\
+        <div>\
+          <div class="card-tag">Book Project</div>\
+          <h3 class="card-title">Fashioning Central Eurasia (400\'96900 CE)</h3>\
+          <p class="card-desc">An exploration of how the kaftan, dress, and fashion shaped social interactions and intertwined communities from the Caucasus to the Tarim Basin.</p>\
+        </div>\
+        <a href="#" class="card-link">View Project &rarr;</a>\
+      </div>\
+\
+      <div class="card">\
+        <div>\
+          <div class="card-tag">Digital Catalog</div>\
+          <h3 class="card-title">Eurasian Silver</h3>\
+          <p class="card-desc">An online catalog tracing the provenance, typology, and art history of 3rd- to 13th-century CE silver vessels discovered across the Eurasian continent.</p>\
+        </div>\
+        <a href="#" class="card-link">Explore Catalog &rarr;</a>\
+      </div>\
+\
+    </div>\
+  </section>\
+\
+  <!-- ESSAYS & PUBLICATIONS -->\
+  <section id="essays" class="section-container">\
+    <div class="section-header">\
+      <h2 class="section-title">Essays & Research</h2>\
+      <span class="section-number">02</span>\
+    </div>\
+    <div class="essays-list">\
+\
+      <a href="#" class="essay-item">\
+        <div>\
+          <h3 class="essay-title">A Sogdian Drinking Game at Panjikent</h3>\
+          <p class="essay-desc">Reconstructing the playful and social aspects of Sogdian banquets.</p>\
+        </div>\
+        <span class="essay-arrow">&rarr;</span>\
+      </a>\
+\
+      <a href="#" class="essay-item">\
+        <div>\
+          <h3 class="essay-title">Balalyk Tepe, Hephthalites, & a Sartorial System</h3>\
+          <p class="essay-desc">Exploring how banqueters celebrated and expressed status in ancient Uzbekistan.</p>\
+        </div>\
+        <span class="essay-arrow">&rarr;</span>\
+      </a>\
+\
+      <a href="#" class="essay-item">\
+        <div>\
+          <h3 class="essay-title">The Many Lives of the Silver Saiga Rhyton in The Met</h3>\
+          <p class="essay-desc">Uncovering the unexpected modern biography of a Central Asian vessel.</p>\
+        </div>\
+        <span class="essay-arrow">&rarr;</span>\
+      </a>\
+\
+      <a href="#" class="essay-item">\
+        <div>\
+          <h3 class="essay-title">Dressing the Hero in the Sogdian Pictorial Epic</h3>\
+          <p class="essay-desc">Investigating an epic hero's iconic leopard-spotted costume.</p>\
+        </div>\
+        <span class="essay-arrow">&rarr;</span>\
+      </a>\
+\
+    </div>\
+  </section>\
+\
+  <!-- ABOUT -->\
+  <section id="about" class="section-container">\
+    <div class="section-header">\
+      <h2 class="section-title">About & Background</h2>\
+      <span class="section-number">03</span>\
+    </div>\
+    <div class="about-layout">\
+      <div class="about-text">\
+        <p>I am an art and design historian specializing in Central Asia, Iran, and the Steppe. My research revolves around premodern design systems that facilitated cross-cultural communication and the modern lives of ancient objects.</p>\
+        <p>My dissertation-turned-first book project, <em>Fashioning Central Eurasia</em>, explores how dress and fashion shaped social interactions across the Silk Roads. My second project, <em>Eurasian Silver</em>, cataloged 3rd- to 13th-century CE silver vessels across vast Eurasian hoards.</p>\
+      </div>\
+\
+      <div class="sidebar-box">\
+        <h4>Education & Fellowships</h4>\
+        <ul>\
+          <li><strong>PhD History of Art</strong><br>Cornell University (2020)</li>\
+          <li><strong>Sylvan C. Coleman Fellow</strong><br>The Metropolitan Museum of Art</li>\
+          <li><strong>DAAD Visiting Scholar</strong><br>Martin-Luther-Universit\'e4t Halle</li>\
+          <li><strong>MA History of Art</strong><br>NYU Institute of Fine Arts</li>\
+        </ul>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- CONTACT -->\
+  <section id="contact" class="section-container">\
+    <div class="section-header">\
+      <h2 class="section-title">Contact</h2>\
+      <span class="section-number">04</span>\
+    </div>\
+    <p>Feel free to get in touch regarding ancient fashion, Sogdian material culture, or silver vessels.</p>\
+    <br>\
+    <a href="mailto:contact@hensellekresearch.com" class="card-link" style="font-size: 1.1rem;">email Betty &rarr;</a>\
+  </section>\
+\
+  <!-- FOOTER -->\
+  <footer>\
+    <div class="footer-container">\
+      <div>&copy; Betty Hensellek, PhD. All rights reserved.</div>\
+      <div>Art & Design History of Central Asia & Iran</div>\
+    </div>\
+  </footer>\
+\
+</body>\
+</html>}
