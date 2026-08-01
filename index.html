@@ -10,14 +10,14 @@
   
   <style>
     :root {
-      --bg-color: #FAF8F5;
+      --bg-color: #F7F7F6;
       --surface-color: #FFFFFF;
-      --text-main: #1A1A1A;
-      --text-muted: #666666;
-      --accent-rust: #9E4A38;
-      --accent-blue: #2B4162;
-      --border-color: #E2DDD5;
-      --border-dark: #1A1A1A;
+      --text-main: #2B2B2B;
+      --text-muted: #6E6E6E;
+      --accent-rust: #8C4331;
+      --accent-blue: #4A5D6E;
+      --border-color: #E5E5E2;
+      --border-dark: #2B2B2B;
       --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       --max-width: 1280px;
     }
@@ -100,19 +100,12 @@
     }
 
     .hero-title {
-      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
       font-weight: 700;
-      line-height: 1.15;
+      line-height: 1.18;
       letter-spacing: -0.02em;
       max-width: 900px;
       margin-bottom: 1.5rem;
-    }
-
-    .hero-subtitle {
-      font-size: 1.2rem;
-      color: var(--text-muted);
-      max-width: 720px;
-      font-weight: 300;
     }
 
     .section-container {
@@ -219,11 +212,11 @@
 
     .essay-title {
       font-size: 1.1rem;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .essay-desc {
-      font-size: 0.88rem;
+      font-size: 0.9rem;
       color: var(--text-muted);
       margin-top: 0.25rem;
     }
@@ -245,6 +238,15 @@
       color: #333;
     }
 
+    .caption-quote {
+      font-size: 0.88rem;
+      font-style: italic;
+      color: var(--text-muted);
+      border-left: 2px solid var(--accent-rust);
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+    }
+
     .sidebar-box {
       background: var(--surface-color);
       border: 1px solid var(--border-color);
@@ -261,12 +263,11 @@
       padding-bottom: 0.5rem;
     }
 
-    .sidebar-box ul { list-style: none; }
-
-    .sidebar-box li {
+    .sidebar-box p {
       font-size: 0.9rem;
-      margin-bottom: 0.75rem;
+      margin-bottom: 1rem;
       color: var(--text-muted);
+      line-height: 1.5;
     }
 
     footer {
@@ -319,31 +320,30 @@
   </header>
 
   <section class="hero">
-    <div class="hero-eyebrow">Central Asia, Iran & The Steppe</div>
-    <h1 class="hero-title">Premodern design systems, ancient textiles, and the modern lives of objects.</h1>
-    <p class="hero-subtitle">Exploring cross-cultural communication along the ancient Silk Roads through sartorial evidence, metalwork, and material culture.</p>
+    <div class="hero-eyebrow">Betty Hensellek, PhD</div>
+    <h1 class="hero-title">Art & Design Historian of Central Asia, Iran & the Steppe</h1>
   </section>
 
   <section id="projects" class="section-container">
     <div class="section-header">
-      <h2 class="section-title">Major Projects</h2>
+      <h2 class="section-title">Projects</h2>
       <span class="section-number">01</span>
     </div>
     <div class="projects-grid">
       <div class="card">
         <div>
           <div class="card-tag">Book Project</div>
-          <h3 class="card-title">Fashioning Central Eurasia (400–900 CE)</h3>
-          <p class="card-desc">An exploration of how the kaftan, dress, and fashion shaped social interactions and intertwined communities from the Caucasus to the Tarim Basin.</p>
+          <h3 class="card-title">Fashioning Central Eurasia (400-900 CE)</h3>
+          <p class="card-desc">a book project about the kaftan & cosmopolitanism</p>
         </div>
         <a href="#" class="card-link">View Project &rarr;</a>
       </div>
 
       <div class="card">
         <div>
-          <div class="card-tag">Digital Catalog</div>
+          <div class="card-tag">Online Catalog</div>
           <h3 class="card-title">Eurasian Silver</h3>
-          <p class="card-desc">An online catalog tracing the provenance, typology, and art history of 3rd- to 13th-century CE silver vessels discovered across the Eurasian continent.</p>
+          <p class="card-desc">an online catalog tracing the provenance of 3rd- to 13th-century silver vessels</p>
         </div>
         <a href="#" class="card-link">Explore Catalog &rarr;</a>
       </div>
@@ -352,14 +352,14 @@
 
   <section id="essays" class="section-container">
     <div class="section-header">
-      <h2 class="section-title">Essays & Research</h2>
+      <h2 class="section-title">Essays</h2>
       <span class="section-number">02</span>
     </div>
     <div class="essays-list">
       <a href="#" class="essay-item">
         <div>
           <h3 class="essay-title">A Sogdian Drinking Game at Panjikent</h3>
-          <p class="essay-desc">Reconstructing the playful and social aspects of Sogdian banquets.</p>
+          <p class="essay-desc">reconstructing the playful aspects of Sogdian banquets</p>
         </div>
         <span class="essay-arrow">&rarr;</span>
       </a>
@@ -367,7 +367,7 @@
       <a href="#" class="essay-item">
         <div>
           <h3 class="essay-title">Balalyk Tepe, Hephthalites, & a Sartorial System</h3>
-          <p class="essay-desc">Exploring how banqueters celebrated and expressed status in ancient Uzbekistan.</p>
+          <p class="essay-desc">exploring how banqueters celebrated in ancient Uzbekistan</p>
         </div>
         <span class="essay-arrow">&rarr;</span>
       </a>
@@ -375,7 +375,31 @@
       <a href="#" class="essay-item">
         <div>
           <h3 class="essay-title">The Many Lives of the Silver Saiga Rhyton in The Met</h3>
-          <p class="essay-desc">Uncovering the unexpected modern biography of a Central Asian vessel.</p>
+          <p class="essay-desc">uncovering the unexpected modern lives of a Central Asian rhyton</p>
+        </div>
+        <span class="essay-arrow">&rarr;</span>
+      </a>
+
+      <a href="#" class="essay-item">
+        <div>
+          <h3 class="essay-title">A Biography of the Khoniakiv Silver Hoard</h3>
+          <p class="essay-desc">tracing the modern lives of four vessels discovered in present-day Ukraine</p>
+        </div>
+        <span class="essay-arrow">&rarr;</span>
+      </a>
+
+      <a href="#" class="essay-item">
+        <div>
+          <h3 class="essay-title">Banqueting, Dress, and the Idealized Sogdian Merchant</h3>
+          <p class="essay-desc">piecing together how elite merchants fashioned their identity through dress</p>
+        </div>
+        <span class="essay-arrow">&rarr;</span>
+      </a>
+
+      <a href="#" class="essay-item">
+        <div>
+          <h3 class="essay-title">Alanic Archaeological Materials at The Met</h3>
+          <p class="essay-desc">cataloging, analyzing, & interpreting a unique collection from Northern Caucasus</p>
         </div>
         <span class="essay-arrow">&rarr;</span>
       </a>
@@ -383,7 +407,7 @@
       <a href="#" class="essay-item">
         <div>
           <h3 class="essay-title">Dressing the Hero in the Sogdian Pictorial Epic</h3>
-          <p class="essay-desc">Investigating an epic hero's iconic leopard-spotted costume.</p>
+          <p class="essay-desc">investigating an epic hero's iconic leopard-spotted costume</p>
         </div>
         <span class="essay-arrow">&rarr;</span>
       </a>
@@ -392,23 +416,21 @@
 
   <section id="about" class="section-container">
     <div class="section-header">
-      <h2 class="section-title">About & Background</h2>
+      <h2 class="section-title">About</h2>
       <span class="section-number">03</span>
     </div>
     <div class="about-layout">
       <div class="about-text">
-        <p>I am an art and design historian specializing in Central Asia, Iran, and the Steppe. My research revolves around premodern design systems that facilitated cross-cultural communication and the modern lives of ancient objects.</p>
-        <p>My dissertation-turned-first book project, <em>Fashioning Central Eurasia</em>, explores how dress and fashion shaped social interactions across the Silk Roads. My second project, <em>Eurasian Silver</em>, cataloged 3rd- to 13th-century CE silver vessels across vast Eurasian hoards.</p>
+        <div class="caption-quote">
+          standing under the first and largest Sasanian rock relief near Firuzabad, Iran, August 2016
+        </div>
+        <p>I'm Betty & I'm an art & design historian of Central Asia, Iran, & the Steppe. My current research revolves around premodern design systems that facilitated cross-cultural communication & the modern lives of ancient objects. My dissertation-turned-first book project, <em>Fashioning Central Eurasia</em>, explores how dress & fashion shaped social interactions & intertwined communities stretching from the Caucasus Mountains to the Tarim Basin in the age of the Great Silk Roads. My second major project, <em>Eurasian Silver</em>, is an online catalog for 3rd- to 13th-century CE silver vessels discovered in hoards across the vast Eurasian continent.</p>
       </div>
 
       <div class="sidebar-box">
-        <h4>Education & Fellowships</h4>
-        <ul>
-          <li><strong>PhD History of Art</strong><br>Cornell University (2020)</li>
-          <li><strong>Sylvan C. Coleman Fellow</strong><br>The Metropolitan Museum of Art</li>
-          <li><strong>DAAD Visiting Scholar</strong><br>Martin-Luther-Universität Halle</li>
-          <li><strong>MA History of Art</strong><br>NYU Institute of Fine Arts</li>
-        </ul>
+        <h4>Education & Research Institutions</h4>
+        <p>I received my PhD from the Department of the History of Art at Cornell University in 2020 for a doctoral dissertation entitled, “The Age of the Polychrome Kaftan: Sartorial Systems of Central Eurasia (400-900 CE).” I received an MA with distinction from the Institute of Fine Arts, New York University (2013), & a BA in Art History & a BFA in Fine Arts from the College of Design, Architecture, Art, & Planning, University of Cincinnati (2011).</p>
+        <p>From September 2017 through August 2019, I was the Sylvan C. Coleman and Pam Coleman Memorial Fund Fellow in the Department of Ancient Near Eastern Art at The Metropolitan Museum of Art. Before arriving at The Met, I began working on my dissertation in Saint Petersburg, Russia, at the Institute for the History of Material Culture of the Russian Academy of Sciences & worked with the collections at the State Hermitage Museum (2016-17). In 2014-2015 I was a DAAD Visiting PhD Student at the Seminar für Orientalische Archäologie und Kunstgeschichte, Martin-Luther-Universität Halle-Wittenberg in Germany.</p>
       </div>
     </div>
   </section>
@@ -418,7 +440,7 @@
       <h2 class="section-title">Contact</h2>
       <span class="section-number">04</span>
     </div>
-    <p>Feel free to get in touch regarding ancient fashion, Sogdian material culture, or silver vessels.</p>
+    <p>Feel free to send me an email and say hi! I am happy to share my articles or converse about the Sogdians, ancient fashion, & silver vessels. Please be patient though, I am a designer by day & often it takes some time to reply to emails.</p>
     <br>
     <a href="mailto:email@example.com" class="card-link" style="font-size: 1.1rem;">email Betty &rarr;</a>
   </section>
@@ -426,7 +448,7 @@
   <footer>
     <div class="footer-container">
       <div>&copy; Betty Hensellek, PhD. All rights reserved.</div>
-      <div>Art & Design History of Central Asia & Iran</div>
+      <div>Art & Design History of Central Asia, Iran & the Steppe</div>
     </div>
   </footer>
 
